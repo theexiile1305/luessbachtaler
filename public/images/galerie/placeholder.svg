@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1a3a2a"/>
+  <rect x="0" y="0" width="800" height="600" fill="url(#grad)" opacity="0.3"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a227;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#1a3a2a;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <text x="400" y="290" font-size="18" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Georgia, serif">
+    Vereinsfoto
+  </text>
+  <text x="400" y="320" font-size="14" text-anchor="middle" fill="rgba(255,255,255,0.15)" font-family="sans-serif">
+    Bild folgt
+  </text>
+</svg>

@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary palette - deep Bavarian forest green */
+  --color-primary-50: #eef5f0;
+  --color-primary-100: #d0e8d8;
+  --color-primary-200: #a2d1b1;
+  --color-primary-300: #74ba8a;
+  --color-primary-400: #46a363;
+  --color-primary-500: #2d7a49;
+  --color-primary-600: #245e38;
+  --color-primary-700: #1a3a2a;
+  --color-primary-800: #12271c;
+  --color-primary-900: #0a140e;
+
+  /* Accent - warm Bavarian gold / brass */
+  --color-accent-50: #fdf8e8;
+  --color-accent-100: #f9edbb;
+  --color-accent-200: #f2d978;
+  --color-accent-300: #e8c547;
+  --color-accent-400: #d4a820;
+  --color-accent-500: #c9a227;
+  --color-accent-600: #a07c1a;
+  --color-accent-700: #7a5d12;
+  --color-accent-800: #533f0c;
+  --color-accent-900: #2d2206;
+
+  /* Neutral warm tones */
+  --color-background: #faf7f0;
+  --color-surface: #ffffff;
+  --color-surface-warm: #f5f1e8;
+  --color-text: #1c1c1c;
+  --color-text-muted: #6b6560;
+  --color-border: #e2ddd6;
+  --color-border-strong: #c8c2b8;
+
+  /* Fonts — Next.js font variables are injected into <html> */
+  --font-serif: var(--font-lora), Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Spacing overrides */
+  --spacing-section: 5rem;
+  --spacing-section-sm: 3rem;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px 0 rgb(26 58 42 / 0.08), 0 0 0 1px rgb(26 58 42 / 0.04);
+  --shadow-card-hover: 0 4px 16px 0 rgb(26 58 42 / 0.14), 0 0 0 1px rgb(26 58 42 / 0.06);
+}
+
+/* Base resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip-to-content link */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary-700);
+  color: white;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: top 0.1s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Ornamental divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-accent-500);
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
+}
