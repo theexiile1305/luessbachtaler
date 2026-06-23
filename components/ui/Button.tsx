@@ -41,7 +41,13 @@ const baseClasses =
 
 export function Button(props: Props) {
   if (props.href !== undefined) {
-    const { href, variant = 'primary', size = 'md', className = '', ...linkRest } = props as LinkProps
+    const {
+      href,
+      variant = 'primary',
+      size = 'md',
+      className = '',
+      ...linkRest
+    } = props as LinkProps
     const classes = [baseClasses, variantClasses[variant], sizeClasses[size], className].join(' ')
     return <Link href={href} className={classes} {...linkRest} />
   }

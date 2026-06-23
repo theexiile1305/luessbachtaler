@@ -3,9 +3,22 @@ import { Navigation } from './Navigation'
 
 function TrachtenIcon() {
   return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true" className="shrink-0">
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      aria-hidden="true"
+      className="shrink-0"
+    >
       <circle cx="18" cy="18" r="17" stroke="#1a3a2a" strokeWidth="1.5" fill="#eef5f0" />
-      <path d="M11 24 C11 19 14 16 18 16 C22 16 25 19 25 24" stroke="#1a3a2a" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      <path
+        d="M11 24 C11 19 14 16 18 16 C22 16 25 19 25 24"
+        stroke="#1a3a2a"
+        strokeWidth="1.5"
+        fill="none"
+        strokeLinecap="round"
+      />
       <circle cx="18" cy="13" r="3" fill="#1a3a2a" />
       <path d="M13 26 L23 26" stroke="#c9a227" strokeWidth="2" strokeLinecap="round" />
     </svg>

@@ -16,7 +16,12 @@ export function EventCard({ event }: { event: Event }) {
   const day = dateObj.toLocaleDateString('de-DE', { day: '2-digit' })
   const month = dateObj.toLocaleDateString('de-DE', { month: 'short' })
   const weekday = dateObj.toLocaleDateString('de-DE', { weekday: 'long' })
-  const fullDate = dateObj.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+  const fullDate = dateObj.toLocaleDateString('de-DE', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
 
   return (
     <article className="flex gap-4 bg-surface rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow duration-200">
@@ -33,11 +38,14 @@ export function EventCard({ event }: { event: Event }) {
           <Badge label={categoryLabels[event.category]} variant={categoryVariant[event.category]} />
           {event.featured && <Badge label="Highlight" variant="gold" />}
         </div>
-        <h3 className="font-serif font-bold text-primary-700 text-lg leading-tight mb-2">{event.title}</h3>
+        <h3 className="font-serif font-bold text-primary-700 text-lg leading-tight mb-2">
+          {event.title}
+        </h3>
         <p className="text-text-muted text-sm leading-relaxed mb-3">{event.description}</p>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-text-muted">
           <time dateTime={event.date}>
-            {weekday}, {day}. {dateObj.toLocaleDateString('de-DE', { month: 'long' })} {dateObj.getFullYear()}
+            {weekday}, {day}. {dateObj.toLocaleDateString('de-DE', { month: 'long' })}{' '}
+            {dateObj.getFullYear()}
           </time>
           {event.time && <span>{event.time} Uhr</span>}
           <span>{event.location}</span>

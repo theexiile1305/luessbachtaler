@@ -17,15 +17,69 @@ export const metadata: Metadata = createMetadata({
 const PLACEHOLDER = '/images/galerie/placeholder.svg'
 
 const galleryImages: GalleryImage[] = [
-  { src: PLACEHOLDER, alt: 'Schuhplattler-Aufführung beim Sommerfest der Lüßbachtaler', caption: 'Sommerfest 2025', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Kinder-Plattelgruppe beim Vereinsfest', caption: 'Nachwuchs in Aktion', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Theateraufführung: Ensemble auf der Bühne', caption: 'Theater 2025', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Lüßbacher Blasmusik beim Dorffest', caption: 'Lüßbacher Blasmusik', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Vereinsausflug in das Tegernseer Tal', caption: 'Vereinsausflug', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Mitglieder in Tracht beim Jahresfest', caption: 'Jahresfest', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Jugend-Plattelgruppe bei der Probe', caption: 'Jugendprobe', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Nikolausfeier für die Kinder des Vereins', caption: 'Nikolausfeier', width: 800, height: 600 },
-  { src: PLACEHOLDER, alt: 'Vereinsabend mit geselligem Beisammensein', caption: 'Vereinsabend', width: 800, height: 600 },
+  {
+    src: PLACEHOLDER,
+    alt: 'Schuhplattler-Aufführung beim Sommerfest der Lüßbachtaler',
+    caption: 'Sommerfest 2025',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Kinder-Plattelgruppe beim Vereinsfest',
+    caption: 'Nachwuchs in Aktion',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Theateraufführung: Ensemble auf der Bühne',
+    caption: 'Theater 2025',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Lüßbacher Blasmusik beim Dorffest',
+    caption: 'Lüßbacher Blasmusik',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Vereinsausflug in das Tegernseer Tal',
+    caption: 'Vereinsausflug',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Mitglieder in Tracht beim Jahresfest',
+    caption: 'Jahresfest',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Jugend-Plattelgruppe bei der Probe',
+    caption: 'Jugendprobe',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Nikolausfeier für die Kinder des Vereins',
+    caption: 'Nikolausfeier',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: PLACEHOLDER,
+    alt: 'Vereinsabend mit geselligem Beisammensein',
+    caption: 'Vereinsabend',
+    width: 800,
+    height: 600,
+  },
 ]
 
 export default function GaleriePage() {

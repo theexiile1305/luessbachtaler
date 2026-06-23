@@ -32,9 +32,9 @@ Kopieren Sie `.env.example` nach `.env.local` und tragen Sie Ihre Werte ein:
 cp .env.example .env.local
 ```
 
-| Variable | Beschreibung |
-|----------|--------------|
-| `RESEND_API_KEY` | API-Key von [resend.com](https://resend.com) |
+| Variable           | Beschreibung                                     |
+| ------------------ | ------------------------------------------------ |
+| `RESEND_API_KEY`   | API-Key von [resend.com](https://resend.com)     |
 | `CONTACT_EMAIL_TO` | Empfänger-E-Mail für Kontaktformular-Nachrichten |
 
 ### Entwicklung

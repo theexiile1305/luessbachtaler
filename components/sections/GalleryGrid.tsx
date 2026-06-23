@@ -1,11 +1,19 @@
 import Image from 'next/image'
 import type { GalleryImage } from '@/types'
 
-export function GalleryGrid({ images, columns = 3 }: { images: GalleryImage[]; columns?: 2 | 3 | 4 }) {
+export function GalleryGrid({
+  images,
+  columns = 3,
+}: {
+  images: GalleryImage[]
+  columns?: 2 | 3 | 4
+}) {
   const colClass =
-    columns === 2 ? 'grid-cols-1 sm:grid-cols-2'
-    : columns === 4 ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'
-    : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+    columns === 2
+      ? 'grid-cols-1 sm:grid-cols-2'
+      : columns === 4
+        ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'
+        : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
 
   return (
     <div className={`grid ${colClass} gap-4`}>

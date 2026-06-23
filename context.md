@@ -20,21 +20,21 @@ Before implementation, thoroughly analyze the existing website and preserve all 
 
 The new website must:
 
-* Preserve the identity and heritage of the association
-* Feel modern while respecting Bavarian traditions
-* Work flawlessly on mobile devices
-* Achieve excellent SEO scores
-* Achieve excellent Lighthouse scores
-* Be highly secure
-* Be fully responsive
-* Be maintainable for many years
+- Preserve the identity and heritage of the association
+- Feel modern while respecting Bavarian traditions
+- Work flawlessly on mobile devices
+- Achieve excellent SEO scores
+- Achieve excellent Lighthouse scores
+- Be highly secure
+- Be fully responsive
+- Be maintainable for many years
 
 Target Lighthouse scores:
 
-* Performance ≥ 95
-* Accessibility ≥ 100
-* Best Practices ≥ 100
-* SEO ≥ 100
+- Performance ≥ 95
+- Accessibility ≥ 100
+- Best Practices ≥ 100
+- SEO ≥ 100
 
 ---
 
@@ -42,17 +42,17 @@ Target Lighthouse scores:
 
 First analyze the existing website and identify:
 
-* Existing navigation structure
-* Existing pages
-* Existing content
-* Existing images
-* Existing downloads
-* Existing events
-* Existing contact information
-* Existing association history
-* Existing youth activities
-* Existing theater activities
-* Existing festival activities
+- Existing navigation structure
+- Existing pages
+- Existing content
+- Existing images
+- Existing downloads
+- Existing events
+- Existing contact information
+- Existing association history
+- Existing youth activities
+- Existing theater activities
+- Existing festival activities
 
 Preserve content but redesign presentation.
 
@@ -64,45 +64,45 @@ The website represents a traditional Bavarian Trachtenverein.
 
 The design should communicate:
 
-* Tradition
-* Community
-* Heimatverbundenheit
-* Bavarian culture
-* Family friendliness
-* Local identity
-* Authenticity
+- Tradition
+- Community
+- Heimatverbundenheit
+- Bavarian culture
+- Family friendliness
+- Local identity
+- Authenticity
 
 Avoid:
 
-* Generic corporate designs
-* Startup aesthetics
-* Overly modern trends
-* Excessive animations
+- Generic corporate designs
+- Startup aesthetics
+- Overly modern trends
+- Excessive animations
 
 Preferred design inspirations:
 
-* Traditional Bavarian associations
-* Local cultural organizations
-* Alpine design systems
-* Regional heritage websites
+- Traditional Bavarian associations
+- Local cultural organizations
+- Alpine design systems
+- Regional heritage websites
 
 Visual characteristics:
 
-* Large photography
-* Event-focused storytelling
-* Warm and welcoming appearance
-* Excellent readability
-* Modern but timeless
+- Large photography
+- Event-focused storytelling
+- Warm and welcoming appearance
+- Excellent readability
+- Modern but timeless
 
 Potential visual themes:
 
-* Alpine landscapes
-* Traditional costumes
-* Vereinsleben
-* Brauchtum
-* Theater
-* Musik
-* Dorffeste
+- Alpine landscapes
+- Traditional costumes
+- Vereinsleben
+- Brauchtum
+- Theater
+- Musik
+- Dorffeste
 
 ---
 
@@ -110,23 +110,23 @@ Potential visual themes:
 
 Mandatory:
 
-* Next.js (latest stable version)
-* App Router
-* TypeScript
-* Tailwind CSS
-* pnpm
+- Next.js (latest stable version)
+- App Router
+- TypeScript
+- Tailwind CSS
+- pnpm
 
 Deployment:
 
-* Vercel
+- Vercel
 
 Code Quality:
 
-* ESLint
-* Prettier
-* Strict TypeScript
-* Zero TypeScript errors
-* Zero ESLint warnings
+- ESLint
+- Prettier
+- Strict TypeScript
+- Zero TypeScript errors
+- Zero ESLint warnings
 
 ---
 
@@ -134,20 +134,20 @@ Code Quality:
 
 Use:
 
-* Exact dependency pinning only
+- Exact dependency pinning only
 
 Requirements:
 
-* No ^
-* No ~
-* No version ranges
+- No ^
+- No ~
+- No version ranges
 
 Every dependency must be pinned to an exact version.
 
 Generate:
 
-* package.json
-* pnpm-lock.yaml
+- package.json
+- pnpm-lock.yaml
 
 Use the latest stable package versions available at implementation time.
 
@@ -180,16 +180,16 @@ Use feature-based organization where appropriate.
 
 At minimum implement:
 
-* Home
-* About the Association
-* History
-* Events
-* Theater
-* Youth Group
-* Gallery
-* Contact
-* Legal Notice
-* Privacy Policy
+- Home
+- About the Association
+- History
+- Events
+- Theater
+- Youth Group
+- Gallery
+- Contact
+- Legal Notice
+- Privacy Policy
 
 Additional pages discovered on the current website should also be migrated.
 
@@ -199,15 +199,15 @@ Additional pages discovered on the current website should also be migrated.
 
 The homepage should prominently feature:
 
-* Hero section with strong local identity
-* Association introduction
-* Upcoming events
-* Recent activities
-* Theater information
-* Youth activities
-* Image gallery teaser
-* Contact information
-* Call-to-action for new members
+- Hero section with strong local identity
+- Association introduction
+- Upcoming events
+- Recent activities
+- Theater information
+- Youth activities
+- Image gallery teaser
+- Contact information
+- Call-to-action for new members
 
 The homepage should immediately communicate:
 
@@ -221,18 +221,18 @@ Mobile-first approach.
 
 Support:
 
-* Mobile
-* Tablet
-* Desktop
-* Large screens
+- Mobile
+- Tablet
+- Desktop
+- Large screens
 
 Requirements:
 
-* Touch-friendly navigation
-* Large tap targets
-* Fast loading
-* Optimized images
-* No layout shifts
+- Touch-friendly navigation
+- Large tap targets
+- Fast loading
+- Optimized images
+- No layout shifts
 
 ---
 
@@ -244,12 +244,12 @@ WCAG 2.1 AA compliance.
 
 Requirements:
 
-* Semantic HTML
-* Keyboard navigation
-* Proper focus management
-* Screen reader compatibility
-* Sufficient contrast
-* ARIA only where necessary
+- Semantic HTML
+- Keyboard navigation
+- Proper focus management
+- Screen reader compatibility
+- Sufficient contrast
+- ARIA only where necessary
 
 ---
 
@@ -259,24 +259,24 @@ Implement modern SEO best practices.
 
 Requirements:
 
-* generateMetadata()
-* Canonical URLs
-* Open Graph
-* Twitter/X cards
-* JSON-LD structured data
-* Semantic HTML
-* XML sitemap
-* robots.txt
+- generateMetadata()
+- Canonical URLs
+- Open Graph
+- Twitter/X cards
+- JSON-LD structured data
+- Semantic HTML
+- XML sitemap
+- robots.txt
 
 Optimize for:
 
-* Trachtenverein Höhenrain
-* GTEV D' Lüßbachtaler Höhenrain
-* Trachtenverein Berg
-* Trachtenverein Starnberg
-* Bayerisches Brauchtum
-* Theater Höhenrain
-* Vereinsleben Höhenrain
+- Trachtenverein Höhenrain
+- GTEV D' Lüßbachtaler Höhenrain
+- Trachtenverein Berg
+- Trachtenverein Starnberg
+- Bayerisches Brauchtum
+- Theater Höhenrain
+- Vereinsleben Höhenrain
 
 ---
 
@@ -286,13 +286,13 @@ Target Core Web Vitals optimization.
 
 Requirements:
 
-* Static Site Generation whenever possible
-* Minimal client-side JavaScript
-* Next.js Image optimization
-* Font optimization
-* Lazy loading
-* Route-level code splitting
-* Tree shaking
+- Static Site Generation whenever possible
+- Minimal client-side JavaScript
+- Next.js Image optimization
+- Font optimization
+- Lazy loading
+- Route-level code splitting
+- Tree shaking
 
 ---
 
@@ -304,28 +304,28 @@ Implement:
 
 ## HTTP Security Headers
 
-* Content-Security-Policy
-* Strict-Transport-Security
-* X-Frame-Options: DENY
-* X-Content-Type-Options: nosniff
-* Referrer-Policy: strict-origin-when-cross-origin
-* Permissions-Policy
+- Content-Security-Policy
+- Strict-Transport-Security
+- X-Frame-Options: DENY
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: strict-origin-when-cross-origin
+- Permissions-Policy
 
 ## Application Security
 
-* No unsafe HTML rendering
-* No dangerouslySetInnerHTML unless fully sanitized
-* Strict validation of all inputs
-* Secure server actions
-* No secrets exposed to the client
-* Dependency minimization
-* CSP-compatible implementation
+- No unsafe HTML rendering
+- No dangerouslySetInnerHTML unless fully sanitized
+- Strict validation of all inputs
+- Secure server actions
+- No secrets exposed to the client
+- Dependency minimization
+- CSP-compatible implementation
 
 ## Supply Chain Security
 
-* Minimize dependencies
-* Avoid abandoned packages
-* Ensure clean audit results
+- Minimize dependencies
+- Avoid abandoned packages
+- Ensure clean audit results
 
 Run security review on generated code.
 
@@ -339,16 +339,16 @@ Resend
 
 Implementation:
 
-* Next.js Server Actions preferred
+- Next.js Server Actions preferred
 
 Requirements:
 
-* Client-side validation
-* Server-side validation
-* Sanitization
-* Honeypot protection
-* Basic rate limiting
-* Proper error handling
+- Client-side validation
+- Server-side validation
+- Sanitization
+- Honeypot protection
+- Basic rate limiting
+- Proper error handling
 
 Environment Variables:
 
@@ -364,11 +364,11 @@ Never expose secrets to the browser.
 
 Requirements:
 
-* Use Next.js Image component
-* Responsive image loading
-* Modern formats
-* Lazy loading
-* Proper alt texts
+- Use Next.js Image component
+- Responsive image loading
+- Modern formats
+- Lazy loading
+- Proper alt texts
 
 Preserve existing historical and cultural imagery.
 
@@ -380,9 +380,9 @@ Structure content so future migration to a headless CMS is simple.
 
 Prefer:
 
-* MDX
-* Content collections
-* Content-driven architecture
+- MDX
+- Content collections
+- Content-driven architecture
 
 Avoid hardcoding content directly into page components.
 
@@ -402,9 +402,9 @@ Create complete configuration.
 
 Generate:
 
-* eslint.config.*
-* prettier.config.*
-* .editorconfig
+- eslint.config.\*
+- prettier.config.\*
+- .editorconfig
 
 ---
 
@@ -414,10 +414,10 @@ Must deploy directly to Vercel without modification.
 
 Provide:
 
-* Environment variable documentation
-* Deployment instructions
-* Security header configuration
-* Build verification steps
+- Environment variable documentation
+- Deployment instructions
+- Security header configuration
+- Build verification steps
 
 ---
 
@@ -454,5 +454,3 @@ Whenever uncertain, prioritize:
 4. SEO
 5. Maintainability
 6. Visual appearance
-
-

@@ -28,7 +28,7 @@ const timeline = [
   },
   {
     year: '1982',
-    title: 'Wiedergründung als D\'Lüßbachtaler',
+    title: "Wiedergründung als D'Lüßbachtaler",
     content: `Am 6. März 1982 war es soweit: Mit 196 Gründungsmitgliedern wurde der Verein feierlich neu gegründet und erhielt seinen heutigen Namen "D'Lüßbachtaler Höhenrain" - abgeleitet vom Lüßbach, der durch die Heimat fließt. Die Lüßbacher Blasmusik trat dem neuen Verein bei und bereicherte das Vereinsleben von Beginn an.`,
   },
   {

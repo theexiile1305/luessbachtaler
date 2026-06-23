@@ -72,7 +72,10 @@ export async function sendContactMessage(
   const to = process.env.CONTACT_EMAIL_TO
   if (!to) {
     console.error('CONTACT_EMAIL_TO environment variable is not set')
-    return { success: false, error: 'Konfigurationsfehler. Bitte kontaktieren Sie uns direkt per E-Mail.' }
+    return {
+      success: false,
+      error: 'Konfigurationsfehler. Bitte kontaktieren Sie uns direkt per E-Mail.',
+    }
   }
 
   const emailSubject = subject
@@ -96,11 +99,15 @@ export async function sendContactMessage(
       <td style="padding: 8px 0; font-weight: bold; color: #6b6560; vertical-align: top;">E-Mail</td>
       <td style="padding: 8px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td>
     </tr>
-    ${subject ? `
+    ${
+      subject
+        ? `
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #6b6560; vertical-align: top;">Betreff</td>
       <td style="padding: 8px 0;">${escapeHtml(subject)}</td>
-    </tr>` : ''}
+    </tr>`
+        : ''
+    }
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #6b6560; vertical-align: top;">Nachricht</td>
       <td style="padding: 8px 0; white-space: pre-line;">${escapeHtml(message)}</td>
@@ -125,7 +132,8 @@ export async function sendContactMessage(
     console.error('Resend error:', error)
     return {
       success: false,
-      error: 'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder schreiben Sie uns direkt an info@luessbachtaler.de.',
+      error:
+        'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder schreiben Sie uns direkt an info@luessbachtaler.de.',
     }
   }
 

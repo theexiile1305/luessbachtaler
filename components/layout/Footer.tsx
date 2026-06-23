@@ -13,7 +13,13 @@ function InstagramIcon() {
 function FacebookIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -48,53 +54,95 @@ export function Footer() {
             <p className="font-serif text-xl font-bold mb-1 text-accent-300">D&apos;Lüßbachtaler</p>
             <p className="text-primary-200 text-sm mb-4">GTEV Höhenrain e.V.</p>
             <address className="not-italic text-primary-200 text-sm leading-relaxed">
-              Attenhauser Str. 22<br />82335 Berg / Höhenrain<br />Bayern
+              Attenhauser Str. 22
+              <br />
+              82335 Berg / Höhenrain
+              <br />
+              Bayern
             </address>
-            <a href="mailto:info@luessbachtaler.de" className="block mt-3 text-accent-300 hover:text-accent-200 text-sm transition-colors">
+            <a
+              href="mailto:info@luessbachtaler.de"
+              className="block mt-3 text-accent-300 hover:text-accent-200 text-sm transition-colors"
+            >
               info@luessbachtaler.de
             </a>
             <div className="flex gap-3 mt-4">
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-primary-200 hover:text-white transition-colors" aria-label="Lüßbachtaler auf Instagram">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-200 hover:text-white transition-colors"
+                aria-label="Lüßbachtaler auf Instagram"
+              >
                 <InstagramIcon />
               </a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-primary-200 hover:text-white transition-colors" aria-label="Lüßbachtaler auf Facebook">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-200 hover:text-white transition-colors"
+                aria-label="Lüßbachtaler auf Facebook"
+              >
                 <FacebookIcon />
               </a>
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">Der Verein</h3>
+            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">
+              Der Verein
+            </h3>
             <ul className="space-y-2">
               {footerLinks.verein.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-primary-200 hover:text-white text-sm transition-colors">{link.label}</Link>
+                  <Link
+                    href={link.href}
+                    className="text-primary-200 hover:text-white text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">Aktivitäten</h3>
+            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">
+              Aktivitäten
+            </h3>
             <ul className="space-y-2">
               {footerLinks.aktivitaeten.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-primary-200 hover:text-white text-sm transition-colors">{link.label}</Link>
+                  <Link
+                    href={link.href}
+                    className="text-primary-200 hover:text-white text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">Rechtliches</h3>
+            <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">
+              Rechtliches
+            </h3>
             <ul className="space-y-2">
               {footerLinks.rechtliches.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-primary-200 hover:text-white text-sm transition-colors">{link.label}</Link>
+                  <Link
+                    href={link.href}
+                    className="text-primary-200 hover:text-white text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
         </div>
         <div className="border-t border-primary-600 pt-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-2 text-center sm:text-left">
-          <p className="text-primary-300 text-sm">© {year} Gebirgstrachten-Erhaltungsverein D&apos;Lüßbachtaler Höhenrain e.V.</p>
+          <p className="text-primary-300 text-sm">
+            © {year} Gebirgstrachten-Erhaltungsverein D&apos;Lüßbachtaler Höhenrain e.V.
+          </p>
           <p className="text-primary-400 text-xs text-center">
             Built with ❤️ by{' '}
             <a
@@ -116,7 +164,9 @@ export function Footer() {
             </a>
             .
           </p>
-          <p className="text-primary-400 text-xs sm:text-right">Gegründet 1920 · Wiedergegründet 1982</p>
+          <p className="text-primary-400 text-xs sm:text-right">
+            Gegründet 1920 · Wiedergegründet 1982
+          </p>
         </div>
       </div>
     </footer>

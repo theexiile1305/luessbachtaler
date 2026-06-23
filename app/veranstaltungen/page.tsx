@@ -77,13 +77,18 @@ export default function VeranstaltungenPage() {
             </>
           ) : (
             <div className="text-center py-16">
-              <div className="text-5xl mb-4" aria-hidden="true">📅</div>
+              <div className="text-5xl mb-4" aria-hidden="true">
+                📅
+              </div>
               <h2 className="font-serif font-bold text-primary-700 text-2xl mb-3">
                 Keine Termine eingetragen
               </h2>
               <p className="text-text-muted">
                 Aktuelle Termine erhalten Sie bei unseren{' '}
-                <a href="mailto:info@luessbachtaler.de" className="text-primary-700 hover:underline">
+                <a
+                  href="mailto:info@luessbachtaler.de"
+                  className="text-primary-700 hover:underline"
+                >
                   Vorstandsmitgliedern
                 </a>
                 .
@@ -104,10 +109,7 @@ export default function VeranstaltungenPage() {
                       <span className="font-medium text-text">{event.title}</span>
                       <span className="text-text-muted text-sm ml-2">{event.location}</span>
                     </div>
-                    <time
-                      dateTime={event.date}
-                      className="text-sm text-text-muted shrink-0"
-                    >
+                    <time dateTime={event.date} className="text-sm text-text-muted shrink-0">
                       {new Date(event.date + 'T00:00:00').toLocaleDateString('de-DE', {
                         day: '2-digit',
                         month: 'long',
