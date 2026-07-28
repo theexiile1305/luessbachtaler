@@ -3,3 +3,4 @@ allowBuilds:
   unrs-resolver: false
 overrides:
   'postcss': '>=8.5.10'
+  'sharp': '>=0.35.0'
